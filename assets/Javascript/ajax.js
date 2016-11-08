@@ -30,7 +30,7 @@ jQuery(document).ready(function(){
 
 function displayHeroInfo(){
 	var hero = $(this).attr('data-name');
-	var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + hero + '&api_key=dc6zaTOxFJmzC&limit=10&rating=pg';
+	var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + hero + '&api_key=dc6zaTOxFJmzC&limit=10&rating=pg';
 	$.ajax({url: queryURL, method: 'GET'})
 		.done(function(response) {
 			$('#superHeroes').empty();
